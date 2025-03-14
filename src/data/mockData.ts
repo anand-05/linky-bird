@@ -55,17 +55,45 @@ export const mockAccessLogs: Record<string, AccessLog[]> = {
       id: "log1-1",
       short_url_id: "1",
       timestamp: "2023-10-31T15:45:00Z",
+      title: "Website Visit",
+      device_type: "Desktop",
       ip_address: "192.168.1.100",
       user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36",
-      referrer: "https://google.com"
+      referrer: "https://google.com",
+      referrer_url: "https://google.com/search?q=example",
+      city: "San Francisco",
+      state: "California",
+      country: "United States",
+      postal_code: "94105",
+      address: "123 Market St",
+      latitude: 37.7749,
+      longitude: -122.4194,
+      session_id: "sess_123456",
+      utm_source: "google",
+      utm_medium: "organic",
+      utm_campaign: "none"
     },
     {
       id: "log1-2",
       short_url_id: "1",
       timestamp: "2023-10-31T14:22:00Z",
+      title: "Mobile Visit",
+      device_type: "Mobile",
       ip_address: "192.168.1.101",
       user_agent: "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5 Mobile/15E148 Safari/604.1",
-      referrer: "https://twitter.com"
+      referrer: "https://twitter.com",
+      referrer_url: "https://twitter.com/user/status/123456",
+      city: "New York",
+      state: "New York",
+      country: "United States",
+      postal_code: "10001",
+      address: "456 Broadway",
+      latitude: 40.7128,
+      longitude: -74.0060,
+      session_id: "sess_789012",
+      utm_source: "twitter",
+      utm_medium: "social",
+      utm_campaign: "spring_promo"
     }
   ],
   "2": [
@@ -73,9 +101,23 @@ export const mockAccessLogs: Record<string, AccessLog[]> = {
       id: "log2-1",
       short_url_id: "2",
       timestamp: "2023-10-31T18:20:00Z",
+      title: "Black Friday Click",
+      device_type: "Tablet",
       ip_address: "192.168.1.102",
       user_agent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15",
-      referrer: "https://facebook.com"
+      referrer: "https://facebook.com",
+      referrer_url: "https://facebook.com/posts/123456",
+      city: "Chicago",
+      state: "Illinois",
+      country: "United States",
+      postal_code: "60601",
+      address: "789 Michigan Ave",
+      latitude: 41.8781,
+      longitude: -87.6298,
+      session_id: "sess_345678",
+      utm_source: "facebook",
+      utm_medium: "social",
+      utm_campaign: "black_friday_2023"
     }
   ]
 };
