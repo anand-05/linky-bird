@@ -1,5 +1,5 @@
 
-import { ShortUrl, AccessLog } from "../types";
+import { ShortUrl, AccessLog, ChartData } from "../types";
 
 export const mockShortUrls: ShortUrl[] = [
   {
